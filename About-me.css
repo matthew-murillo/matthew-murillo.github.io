@@ -43,6 +43,11 @@
   margin-bottom: 0;
 }
 
+.u-section-1 .u-btn-6 {
+  background-image: none;
+  padding: 0;
+}
+
 .u-section-1 .u-text-4 {
   margin-left: 314px;
   margin-right: auto;
@@ -55,10 +60,20 @@
   margin-bottom: 0;
 }
 
+.u-section-1 .u-btn-7 {
+  background-image: none;
+  padding: 0;
+}
+
 .u-section-1 .u-text-6 {
   margin-left: 314px;
   margin-right: auto;
   margin-bottom: 60px;
+}
+
+.u-section-1 .u-btn-8 {
+  background-image: none;
+  padding: 0;
 }
 
 @media (max-width: 1199px) {
