@@ -41374,10 +41374,28 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 
 .u-header .u-sheet-1 {
-  min-height: 80px;
+  min-height: 45px;
 }
 
+.u-header .u-menu-1 {
+  width: auto;
+  margin: 13px 0 0 auto;
+}
 
+.u-header .u-nav-2 {
+  font-size: 1.25rem;
+}
+
+@media (max-width: 991px) {
+  .u-header .u-sheet-1 {
+    min-height: 82px;
+  }
+
+  .u-header .u-menu-1 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+}
 
 
  .u-footer {

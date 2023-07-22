@@ -10,26 +10,31 @@
 
 .u-section-1 .u-btn-1 {
   transition-duration: 0.5s;
+  text-decoration: none solid rgb(17, 17, 17);
   padding: 0;
 }
 
 .u-section-1 .u-btn-2 {
   transition-duration: 0.5s;
+  text-decoration: none solid rgb(0, 0, 0);
   padding: 0;
 }
 
 .u-section-1 .u-btn-3 {
   transition-duration: 0.5s;
+  text-decoration: none solid rgb(0, 0, 0);
   padding: 0;
 }
 
 .u-section-1 .u-btn-4 {
   transition-duration: 0.5s;
+  text-decoration: none solid rgb(17, 17, 17);
   padding: 0;
 }
 
 .u-section-1 .u-btn-5 {
   transition-duration: 0.5s;
+  text-decoration: none solid rgb(17, 17, 17);
   padding: 0;
 }
 
@@ -37,7 +42,33 @@
   margin: -225px 182px 60px 314px;
 }
 
+.u-section-1 .u-btn-6 {
+  background-image: none;
+  text-decoration: underline !important;
+  padding: 0;
+}
+
 @media (max-width: 1199px) {
+  .u-section-1 .u-text-2 {
+    margin-right: 82px;
+    margin-left: 261px;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 360px;
+  }
+
+  .u-section-1 .u-text-2 {
+    width: auto;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 767px) {
   .u-section-1 .u-btn-1 {
     text-decoration: none solid rgb(17, 17, 17);
   }
@@ -57,31 +88,11 @@
   .u-section-1 .u-btn-5 {
     text-decoration: none solid rgb(17, 17, 17);
   }
-
-  .u-section-1 .u-text-2 {
-    margin-right: 82px;
-    margin-left: 261px;
-  }
-}
-
-@media (max-width: 991px) {
-  .u-section-1 .u-text-2 {
-    margin-right: 0;
-    margin-left: 200px;
-  }
-}
-
-@media (max-width: 767px) {
-  .u-section-1 .u-text-2 {
-    margin-left: 150px;
-  }
 }
 
 @media (max-width: 575px) {
   .u-section-1 .u-text-2 {
-    width: auto;
     margin-top: 24px;
-    margin-left: 0;
   }
 }
 

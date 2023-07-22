@@ -211,7 +211,6 @@
 @media (max-width: 1199px) {
   .u-section-1 .u-text-2 {
     width: auto;
-    margin-top: -207px;
     margin-left: 215px;
   }
 
@@ -300,8 +299,13 @@
 }
 
 @media (max-width: 575px) {
+  .u-section-1 .u-text-1 {
+    width: auto;
+    margin-top: 42px;
+  }
+
   .u-section-1 .u-text-2 {
-    margin-top: 20px;
+    margin-top: 48px;
   }
 }
 
