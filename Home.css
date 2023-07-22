@@ -1,0 +1,188 @@
+.u-section-1 .u-sheet-1 {
+  min-height: 928px;
+}
+
+.u-section-1 .u-text-1 {
+  font-weight: 700;
+  background-image: none;
+  margin: 70px auto 0 0;
+}
+
+.u-section-1 .u-btn-1 {
+  transition-duration: 0.5s;
+  padding: 0;
+}
+
+.u-section-1 .u-btn-2 {
+  transition-duration: 0.5s;
+  padding: 0;
+}
+
+.u-section-1 .u-btn-3 {
+  transition-duration: 0.5s;
+  padding: 0;
+}
+
+.u-section-1 .u-btn-4 {
+  transition-duration: 0.5s;
+  padding: 0;
+}
+
+.u-section-1 .u-btn-5 {
+  transition-duration: 0.5s;
+  padding: 0;
+}
+
+.u-section-1 .u-text-2 {
+  margin: -225px 182px 60px 314px;
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 .u-btn-1 {
+    text-decoration: none solid rgb(17, 17, 17);
+  }
+
+  .u-section-1 .u-btn-2 {
+    text-decoration: none solid rgb(0, 0, 0);
+  }
+
+  .u-section-1 .u-btn-3 {
+    text-decoration: none solid rgb(0, 0, 0);
+  }
+
+  .u-section-1 .u-btn-4 {
+    text-decoration: none solid rgb(17, 17, 17);
+  }
+
+  .u-section-1 .u-btn-5 {
+    text-decoration: none solid rgb(17, 17, 17);
+  }
+
+  .u-section-1 .u-text-2 {
+    margin-right: 82px;
+    margin-left: 261px;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-1 .u-text-2 {
+    margin-right: 0;
+    margin-left: 200px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-1 .u-text-2 {
+    margin-left: 150px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 .u-text-2 {
+    width: auto;
+    margin-top: 24px;
+    margin-left: 0;
+  }
+}
+
+.u-block-c8f0-43:not([data-block-selected]):not([data-cell-selected]),
+.u-block-c8f0-43:not([data-block-selected]):not([data-cell-selected]):before,
+.u-block-c8f0-43:not([data-block-selected]):not([data-cell-selected]) > .u-container-layout:before {
+  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, borders, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
+}
+
+.u-block-c8f0-43:not([data-block-selected]):not([data-cell-selected]).u-block-c8f0-43:not([data-block-selected]):not([data-cell-selected]).u-block-c8f0-43:not([data-block-selected]):not([data-cell-selected]):hover {
+  text-decoration: underline !important;
+}
+
+.u-block-c8f0-43:not([data-block-selected]):not([data-cell-selected]).u-block-c8f0-43:not([data-block-selected]):not([data-cell-selected]).u-block-c8f0-43:not([data-block-selected]):not([data-cell-selected]).hover {
+  text-decoration: underline !important;
+}
+
+.u-block-c8f0-44:not([data-block-selected]):not([data-cell-selected]),
+.u-block-c8f0-44:not([data-block-selected]):not([data-cell-selected]):before,
+.u-block-c8f0-44:not([data-block-selected]):not([data-cell-selected]) > .u-container-layout:before {
+  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, borders, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
+}
+
+.u-block-c8f0-44:not([data-block-selected]):not([data-cell-selected]).u-block-c8f0-44:not([data-block-selected]):not([data-cell-selected]).u-block-c8f0-44:not([data-block-selected]):not([data-cell-selected]):hover {
+  text-decoration: underline !important;
+}
+
+.u-block-c8f0-44:not([data-block-selected]):not([data-cell-selected]).u-block-c8f0-44:not([data-block-selected]):not([data-cell-selected]).u-block-c8f0-44:not([data-block-selected]):not([data-cell-selected]).hover {
+  text-decoration: underline !important;
+}
+
+.u-section-1 .u-btn-3,
+.u-section-1 .u-btn-3:before,
+.u-section-1 .u-btn-3 > .u-container-layout:before {
+  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, borders, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
+}
+
+.u-section-1 .u-btn-3.u-btn-3.u-btn-3:hover {
+  text-decoration: underline !important;
+}
+
+.u-section-1 .u-btn-3.u-btn-3.u-btn-3.hover {
+  text-decoration: underline !important;
+}
+
+.u-section-1 .u-btn-4,
+.u-section-1 .u-btn-4:before,
+.u-section-1 .u-btn-4 > .u-container-layout:before {
+  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, borders, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
+}
+
+.u-section-1 .u-btn-4.u-btn-4.u-btn-4:hover {
+  text-decoration: underline !important;
+}
+
+.u-section-1 .u-btn-4.u-btn-4.u-btn-4.hover {
+  text-decoration: underline !important;
+}
+
+.u-section-1 .u-btn-1,
+.u-section-1 .u-btn-1:before,
+.u-section-1 .u-btn-1 > .u-container-layout:before {
+  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, borders, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
+}
+
+.u-section-1 .u-btn-1.u-btn-1.u-btn-1:hover {
+  text-decoration: underline !important;
+}
+
+.u-section-1 .u-btn-1.u-btn-1.u-btn-1.hover {
+  text-decoration: underline !important;
+}
+
+.u-section-1 .u-btn-5,
+.u-section-1 .u-btn-5:before,
+.u-section-1 .u-btn-5 > .u-container-layout:before {
+  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, borders, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
+}
+
+.u-section-1 .u-btn-5.u-btn-5.u-btn-5:hover {
+  text-decoration: underline !important;
+}
+
+.u-section-1 .u-btn-5.u-btn-5.u-btn-5.hover {
+  text-decoration: underline !important;
+}
+
+.u-section-1 .u-btn-2,
+.u-section-1 .u-btn-2:before,
+.u-section-1 .u-btn-2 > .u-container-layout:before {
+  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, borders, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
+}
+
+.u-section-1 .u-btn-2.u-btn-2.u-btn-2:hover {
+  text-decoration: underline !important;
+}
+
+.u-section-1 .u-btn-2.u-btn-2.u-btn-2.hover {
+  text-decoration: underline !important;
+}.sticky {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 70px
+} 
