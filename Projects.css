@@ -4,6 +4,7 @@
 
 .u-section-1 .u-text-1 {
   background-image: none;
+  font-weight: normal;
   margin: 70px auto 0 0;
 }
 
@@ -37,7 +38,7 @@
 }
 
 .u-section-1 .u-text-3 {
-  margin: 34px 182px 63px 314px;
+  margin: 20px 182px 60px 314px;
 }
 
 .u-section-1 .u-btn-6 {
@@ -47,16 +48,13 @@
 }
 
 @media (max-width: 1199px) {
-  .u-section-1 .u-text-1 {
-    font-weight: normal;
-  }
-
   .u-section-1 .u-text-2 {
     margin-left: 259px;
   }
 
   .u-section-1 .u-text-3 {
     width: auto;
+    margin-top: 22px;
     margin-right: 84px;
     margin-left: 259px;
   }
@@ -70,6 +68,7 @@
   }
 
   .u-section-1 .u-text-3 {
+    margin-top: 20px;
     margin-left: 0;
     margin-right: 0;
   }
