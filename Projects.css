@@ -3,7 +3,6 @@
 }
 
 .u-section-1 .u-text-1 {
-  font-weight: 700;
   background-image: none;
   margin: 70px auto 0 0;
 }
@@ -38,7 +37,7 @@
 }
 
 .u-section-1 .u-text-3 {
-  margin: 34px 182px 60px 314px;
+  margin: 34px 182px 63px 314px;
 }
 
 .u-section-1 .u-btn-6 {
@@ -48,6 +47,10 @@
 }
 
 @media (max-width: 1199px) {
+  .u-section-1 .u-text-1 {
+    font-weight: normal;
+  }
+
   .u-section-1 .u-text-2 {
     margin-left: 259px;
   }
