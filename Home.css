@@ -10,31 +10,26 @@
 
 .u-section-1 .u-btn-1 {
   transition-duration: 0.5s;
-  text-decoration: none solid rgb(17, 17, 17);
   padding: 0;
 }
 
 .u-section-1 .u-btn-2 {
   transition-duration: 0.5s;
-  text-decoration: none solid rgb(0, 0, 0);
   padding: 0;
 }
 
 .u-section-1 .u-btn-3 {
   transition-duration: 0.5s;
-  text-decoration: none solid rgb(0, 0, 0);
   padding: 0;
 }
 
 .u-section-1 .u-btn-4 {
   transition-duration: 0.5s;
-  text-decoration: none solid rgb(17, 17, 17);
   padding: 0;
 }
 
 .u-section-1 .u-btn-5 {
   transition-duration: 0.5s;
-  text-decoration: none solid rgb(17, 17, 17);
   padding: 0;
 }
 
@@ -89,6 +84,26 @@
 }
 
 @media (max-width: 1199px) {
+  .u-section-1 .u-btn-1 {
+    text-decoration: none solid rgb(17, 17, 17);
+  }
+
+  .u-section-1 .u-btn-2 {
+    text-decoration: none solid rgb(0, 0, 0);
+  }
+
+  .u-section-1 .u-btn-3 {
+    text-decoration: none solid rgb(0, 0, 0);
+  }
+
+  .u-section-1 .u-btn-4 {
+    text-decoration: none solid rgb(17, 17, 17);
+  }
+
+  .u-section-1 .u-btn-5 {
+    text-decoration: none solid rgb(17, 17, 17);
+  }
+
   .u-section-1 .u-text-2 {
     margin-right: 82px;
     margin-left: 261px;
@@ -199,26 +214,6 @@
 @media (max-width: 767px) {
   .u-section-1 .u-text-1 {
     margin-top: 60px;
-  }
-
-  .u-section-1 .u-btn-1 {
-    text-decoration: none solid rgb(17, 17, 17);
-  }
-
-  .u-section-1 .u-btn-2 {
-    text-decoration: none solid rgb(0, 0, 0);
-  }
-
-  .u-section-1 .u-btn-3 {
-    text-decoration: none solid rgb(0, 0, 0);
-  }
-
-  .u-section-1 .u-btn-4 {
-    text-decoration: none solid rgb(17, 17, 17);
-  }
-
-  .u-section-1 .u-btn-5 {
-    text-decoration: none solid rgb(17, 17, 17);
   }
 }
 
