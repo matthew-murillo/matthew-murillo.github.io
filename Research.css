@@ -397,3 +397,6 @@ a:hover{
 a:active{
 	color:black;	
 }
+a:visited{
+	color:black;
+}
