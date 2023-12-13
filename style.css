@@ -492,6 +492,9 @@ h3 {
   .projects-background,
   .notes-background {
     height: 100%;
+    /* background-color: #faeedf; */
+    background-color: #f9f9f9;
+    opacity: 90%;
   }
 
   .home-text,
@@ -502,5 +505,10 @@ h3 {
     height: 100%; /* Adjust as needed */
     flex: 1;
     overflow: hidden;
+  }
+
+  .fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease;
   }
 }
