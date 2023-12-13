@@ -74,13 +74,13 @@ function update() {
 }
 
 function resizeCanvas() {
-  canvas.width = document.getElementById("node-background").clientWidth;
+  canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
   initNodes();
 }
 
 window.addEventListener("resize", resizeCanvas);
-resizeCanvas();
+resizeCanvas(); // Call this function to set initial size
 update();
 
 let isInitialLoad = true; // Flag to indicate initial load
