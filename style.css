@@ -25,7 +25,7 @@ body {
   flex: 1; /* Each div will take up 50% of the container width */
   height: 100vh;
   width: 100vh;
-  overflow-y: auto; /* Enable vertical scroll */
+  overflow-y: hidden; /* Enable vertical scroll */
   overflow-x: hidden; /* Disable horizontal scroll */
 }
 
@@ -466,6 +466,7 @@ h3 {
   .right {
     position: relative;
     padding-top: 1vh;
+    overflow-y: hidden; /* Enable vertical scroll */
   }
 
   .name {
