@@ -147,3 +147,11 @@ document.addEventListener("DOMContentLoaded", function () {
     dropdown.classList.toggle("show");
   });
 });
+
+document.body.addEventListener(
+  "touchmove",
+  function (e) {
+    e.preventDefault();
+  },
+  { passive: false }
+); // The passive option is important for some browsers
