@@ -131,3 +131,19 @@ function adjustDivVisibility() {
 // Call the function on page load and on hash change
 window.addEventListener("load", adjustDivVisibility);
 window.addEventListener("hashchange", adjustDivVisibility);
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Select the hamburger menu
+  var hamburger = document.querySelector(".hamburger-menu");
+  var dropdown = document.querySelector(".dropdown-menu");
+
+  hamburger.addEventListener("click", function () {
+    if (dropdown.classList.contains("show")) {
+      dropdown.style.height = "0";
+    } else {
+      var scrollHeight = dropdown.scrollHeight;
+      dropdown.style.height = scrollHeight + "px";
+    }
+    dropdown.classList.toggle("show");
+  });
+});
