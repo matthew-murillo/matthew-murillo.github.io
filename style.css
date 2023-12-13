@@ -381,6 +381,7 @@ h3 {
     height: auto; /* 100% of the viewport height */
     width: 100%; /* 100% of the viewport width */
     box-sizing: border-box;
+    overflow-y: hidden;
   }
 
   .left {
@@ -505,6 +506,7 @@ h3 {
     background-color: #f9f9f9;
     opacity: 90%;
     max-height: 1000px;
+    padding-bottom: 40%;
   }
   .notes-background {
     padding-bottom: 500px;
