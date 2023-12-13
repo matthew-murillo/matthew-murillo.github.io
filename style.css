@@ -479,7 +479,7 @@ h3 {
   .right {
     position: relative;
     padding-top: 100px;
-    padding-bottom: 50%;
+    padding-bottom: 100vh;
   }
 
   .name {
