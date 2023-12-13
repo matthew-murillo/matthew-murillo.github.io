@@ -35,7 +35,24 @@ class Node {
 
 function initNodes() {
   nodes = [];
-  for (let i = 0; i < maxNodes; i++) {
+
+  // Calculate canvas area
+  const canvasArea = canvas.width * canvas.height;
+
+  // Define a base area (e.g., for 1000x1000 px) and set the desired node count for that area
+  const baseArea = 1000000; // Example: 1000px * 1000px
+  const baseNodeCount = maxNodes; // Max nodes for the base area
+
+  // Calculate the node count proportional to the canvas size
+  const proportionalNodeCount = Math.round(
+    (canvasArea / baseArea) * baseNodeCount
+  );
+
+  // Ensure a minimum number of nodes, if needed
+  const minNodes = 20; // Set a minimum count to ensure there are always some nodes
+  const finalNodeCount = Math.max(proportionalNodeCount, minNodes);
+
+  for (let i = 0; i < finalNodeCount; i++) {
     nodes.push(new Node());
   }
 }
