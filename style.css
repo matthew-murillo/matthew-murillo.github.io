@@ -5,7 +5,9 @@ body {
   height: 100vh; /* 100% of the viewport height */
   width: 100vw; /* 100% of the viewport width */
   box-sizing: border-box;
-  font-family: "Helvetica", sans-serif;
+  /* font-family: "Proxima Nova", sans-serif; */
+  font-family: "Avenir";
+
   color: #12374d;
 }
 
@@ -376,7 +378,6 @@ h3 {
     height: auto; /* 100% of the viewport height */
     width: 100%; /* 100% of the viewport width */
     box-sizing: border-box;
-    font-family: "Helvetica", sans-serif;
   }
 
   .left {
@@ -492,7 +493,7 @@ h3 {
   .projects-background,
   .notes-background {
     height: 100%;
-    /* background-color: #faeedf; */
+
     background-color: #f9f9f9;
     opacity: 90%;
   }

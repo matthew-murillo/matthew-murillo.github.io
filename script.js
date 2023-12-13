@@ -134,6 +134,7 @@ function adjustDivVisibility() {
       if (divClass === targetClass) {
         div.style.display = "flex"; // or "block", depending on your layout
         div.classList.add("slide-in");
+        div.classList.remove("fade-out");
       } else if (divClass === lastActiveClass) {
         // Opacity to 0 the last active div after the animation completes
         setTimeout(function () {
