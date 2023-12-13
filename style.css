@@ -373,6 +373,7 @@ h3 {
     width: 100vw; /* 100% of the viewport width */
     box-sizing: border-box;
     font-family: "Helvetica", sans-serif;
+    overflow-y: hidden;
   }
   .left {
     display: none;
