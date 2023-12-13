@@ -369,8 +369,8 @@ h3 {
   body {
     margin: 0;
     padding: 0;
-    height: 100vh; /* 100% of the viewport height */
-    width: 100vw; /* 100% of the viewport width */
+    height: 100%; /* 100% of the viewport height */
+    width: 100%; /* 100% of the viewport width */
     box-sizing: border-box;
     font-family: "Helvetica", sans-serif;
     overflow-y: hidden;
