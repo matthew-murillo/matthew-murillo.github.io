@@ -140,6 +140,9 @@ function adjustDivVisibility() {
         setTimeout(function () {
           div.classList.add("fade-out");
         }, 500);
+        setTimeout(function () {
+          div.style.display = "none";
+        }, 500);
       } else if (isInitialLoad) {
         div.style.display = "none"; // Hide non-active divs on initial load
       }
@@ -170,3 +173,58 @@ document.addEventListener("DOMContentLoaded", function () {
     dropdown.classList.toggle("show");
   });
 });
+
+function scrollToTopOfDiv() {
+  var tinyModeBreakpoint = 768;
+  if (window.innerWidth <= tinyModeBreakpoint) {
+    var myDiv = document.querySelector(".right");
+    if (myDiv) {
+      myDiv.scrollTo({ top: 0, behavior: "smooth" }); // Scrolls to the top of the div
+    }
+  }
+}
+
+window.addEventListener("hashchange", scrollToTopOfDiv);
+
+function adjustHeight() {
+  // Define the breakpoint for "tiny mode"
+  var tinyModeBreakpoint = 768;
+
+  // Check if the screen width is less than or equal to the breakpoint
+  if (window.innerWidth <= tinyModeBreakpoint) {
+    var currentHash = window.location.hash;
+    var referenceDivSelector;
+
+    // Determine the correct selector based on the current hash
+    switch (currentHash) {
+      case "#Home":
+        referenceDivSelector = ".home-background";
+        break;
+      case "#Research":
+        referenceDivSelector = ".research-background";
+        break;
+      case "#Notes":
+        referenceDivSelector = ".notes-background";
+        break;
+      case "#Projects":
+        referenceDivSelector = ".projects-background";
+        break;
+      // Add more cases as needed
+      default:
+        return; // If no hash or an unrecognized hash, don't change the height
+    }
+
+    var referenceDiv = document.querySelector(referenceDivSelector);
+    var nodeBackground = document.getElementById("node-background");
+
+    if (referenceDiv && nodeBackground) {
+      var height = referenceDiv.offsetHeight; // Get the height of the reference div
+      nodeBackground.style.height = height + "px"; // Set the height of node-background
+    }
+  }
+}
+
+// Call the function on page load, resize, and hash change
+window.addEventListener("DOMContentLoaded", adjustHeight);
+window.addEventListener("resize", adjustHeight);
+window.addEventListener("hashchange", adjustHeight);

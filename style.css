@@ -10,6 +10,9 @@ body {
 
   color: #12374d;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 canvas {
   display: block; /* Removes the default margin */
@@ -478,8 +481,8 @@ h3 {
 
   .right {
     position: relative;
-    padding-top: 100px;
-    padding-bottom: 100vh;
+    overflow-x: hidden;
+    overflow-y: visible;
   }
 
   .name {
@@ -487,15 +490,24 @@ h3 {
     font-size: 25px;
     text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1);
   }
+  .Home,
+  .Notes,
+  .Projects,
+  .Research {
+    height: auto;
+    padding-top: 100px;
+  }
 
   .home-background,
   .research-background,
   .projects-background,
   .notes-background {
-    height: 100%;
-
     background-color: #f9f9f9;
     opacity: 90%;
+    max-height: 1000px;
+  }
+  .notes-background {
+    padding-bottom: 500px;
   }
 
   .home-text,
@@ -503,13 +515,17 @@ h3 {
   .projects-text,
   .notes-text {
     width: 100%; /* Adjust as needed */
-    height: 100%; /* Adjust as needed */
     flex: 1;
-    overflow: hidden;
   }
 
   .fade-out {
     opacity: 0;
     transition: opacity 0.5s ease;
+  }
+
+  #node-background {
+    position: absolute;
+    overflow-y: visible;
+    height: max-content;
   }
 }
