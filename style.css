@@ -477,13 +477,30 @@ h3 {
 
   .right {
     position: relative;
-    padding-top: 5%;
-    padding-bottom: 20%;
+    padding-top: 100px;
+    padding-bottom: 50%;
   }
 
   .name {
     padding-left: 7%;
     font-size: 25px;
     text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  .home-background,
+  .research-background,
+  .projects-background,
+  .notes-background {
+    height: 100%;
+  }
+
+  .home-text,
+  .research-text,
+  .projects-text,
+  .notes-text {
+    width: 100%; /* Adjust as needed */
+    height: 100%; /* Adjust as needed */
+    flex: 1;
+    overflow: hidden;
   }
 }
