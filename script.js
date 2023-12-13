@@ -228,3 +228,29 @@ function adjustHeight() {
 window.addEventListener("DOMContentLoaded", adjustHeight);
 window.addEventListener("resize", adjustHeight);
 window.addEventListener("hashchange", adjustHeight);
+
+document.addEventListener("DOMContentLoaded", function () {
+  var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+  if (isMobile) {
+    // Prevent scrolling on the body for mobile devices
+    document.body.addEventListener(
+      "touchmove",
+      function (e) {
+        e.preventDefault();
+      },
+      { passive: false }
+    );
+
+    // Allow scrolling on .right element
+    var rightDiv = document.querySelector(".right");
+    if (rightDiv) {
+      rightDiv.addEventListener(
+        "touchmove",
+        function (e) {
+          e.stopPropagation(); // Prevents preventing default behavior
+        },
+        { passive: false }
+      );
+    }
+  }
+});

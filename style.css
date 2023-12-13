@@ -497,6 +497,7 @@ h3 {
   .Research {
     height: auto;
     padding-top: 100px;
+    scroll-behavior: smooth;
   }
 
   .home-background,
