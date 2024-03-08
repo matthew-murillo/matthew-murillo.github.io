@@ -41,7 +41,7 @@ canvas {
 }
 
 .left {
-  background-color: #fde8cd;
+  background-color: #f0f4f6;
   color: white;
   display: flex;
   flex-direction: column; /* Stack children vertically */
@@ -283,7 +283,7 @@ a {
 
 a:hover {
   color: white;
-  text-shadow: 2px 2px 0px #256f9a;
+  text-shadow: 3px 3px 3px #256f9a;
 }
 
 .triangle-container-back {
