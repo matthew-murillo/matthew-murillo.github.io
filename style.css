@@ -152,8 +152,8 @@ canvas {
 }
 
 .home-background {
-  width: 70%; /* Adjust as needed */
-  height: 70%; /* Adjust as needed */
+  width: 80%; /* Adjust as needed */
+  height: 80%; /* Adjust as needed */
   background-color: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -189,8 +189,8 @@ canvas {
 }
 
 .research-background {
-  width: 70%; /* Adjust as needed */
-  height: 70%; /* Adjust as needed */
+  width: 80%; /* Adjust as needed */
+  height: 80%; /* Adjust as needed */
   background-color: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -219,8 +219,8 @@ canvas {
 }
 
 .notes-background {
-  width: 70%; /* Adjust as needed */
-  height: 70%; /* Adjust as needed */
+  width: 80%; /* Adjust as needed */
+  height: 80%; /* Adjust as needed */
   background-color: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -249,8 +249,8 @@ canvas {
 }
 
 .projects-background {
-  width: 70%; /* Adjust as needed */
-  height: 70%; /* Adjust as needed */
+  width: 80%; /* Adjust as needed */
+  height: 80%; /* Adjust as needed */
   background-color: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: flex;
