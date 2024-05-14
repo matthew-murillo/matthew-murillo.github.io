@@ -8,9 +8,8 @@ body {
   /* font-family: "Proxima Nova", sans-serif; */
   font-family: "Avenir";
 
-  color: black;
+  color: #12374d;
 }
-
 html {
   scroll-behavior: smooth;
 }
@@ -42,7 +41,7 @@ canvas {
 }
 
 .left {
-  background-color: white;
+  background-color: #f0f4f6;
   color: white;
   display: flex;
   flex-direction: column; /* Stack children vertically */
@@ -66,19 +65,19 @@ canvas {
 }
 
 .profile {
-  max-width: 300px; /* Maximum dimensions, allowing it to scale down */
-  max-height: 300px;
-  border-radius: 0%;
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+  max-width: 200px; /* Maximum dimensions, allowing it to scale down */
+  max-height: 200px;
+  border-radius: 50%;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.5);
   position: relative;
 }
 
 .profile:hover {
-  max-width: 300px; /* Maximum dimensions, allowing it to scale down */
-  max-height: 300px;
-  border-radius: 0%;
+  max-width: 200px; /* Maximum dimensions, allowing it to scale down */
+  max-height: 200px;
+  border-radius: 50%;
   animation: bounce 0.5s;
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.5);
   position: relative;
 }
 @keyframes bounce {
@@ -87,7 +86,7 @@ canvas {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-10px);
+    transform: translateY(-20px);
   }
 }
 
@@ -99,7 +98,7 @@ canvas {
   text-align: center; /* Align menu items to the left */
   font-size: 45px;
 
-  text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.1);
+  text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1);
 }
 
 .menu ul {
@@ -116,7 +115,7 @@ canvas {
 
 .menu a {
   text-decoration: none; /* Optional: Removes underline from links */
-  color: black; /* Set link color */
+  color: #12374d; /* Set link color */
   /* Additional link styles as needed */
 }
 #node-background {
@@ -174,6 +173,7 @@ canvas {
 .research-background a:hover,
 .notes-background a:hover,
 .projects-background a:hover {
+  color: #256f9a;
   text-shadow: none;
 }
 
@@ -278,11 +278,88 @@ li {
 
 a {
   text-decoration: none;
-  color: black;
+  color: #12374d;
 }
 
 a:hover {
-  font-style: italic;
+  color: white;
+  text-shadow: 3px 3px 3px #256f9a;
+}
+
+.triangle-container-back {
+  position: absolute;
+  width: 100%; /* Full width of the container */
+  height: 100%; /* Height of the container, adjust as needed */
+  background-color: none; /* Background of the div */
+  overflow: hidden; /* Ensures the triangle is clipped if it extends outside the div */
+  z-index: 0;
+}
+
+.triangle-container-back::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #92b7cc; /* Color of the triangle */
+  clip-path: polygon(0 0, 100% 0, 100% 50%);
+  z-index: 0;
+}
+
+.triangle-container-front {
+  position: absolute;
+  width: 100%; /* Full width of the container */
+  height: 100%; /* Height of the container, adjust as needed */
+  background-color: none; /* Background of the div */
+  overflow: hidden; /* Ensures the triangle is clipped if it extends outside the div */
+  z-index: 1;
+}
+
+.triangle-container-front::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #256f9a; /* Color of the triangle */
+  clip-path: polygon(5% 0, 100% 0, 100% 47.5%);
+  z-index: 1;
+}
+
+.triangle-container-line {
+  position: absolute;
+  width: 100%; /* Full width of the container */
+  height: 100%; /* Height of the container, adjust as needed */
+  background-color: none; /* Background of the div */
+  overflow: hidden; /* Ensures the triangle is clipped if it extends outside the div */
+  z-index: 2;
+}
+
+.triangle-container-line::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: white; /* Color of the triangle */
+  clip-path: polygon(25% 0%, 26% 0, 100% 37%, 100% 37.5%);
+  z-index: 2;
+}
+
+.rectangle-border {
+  position: absolute;
+  width: 100%; /* Full width of the container */
+  height: 100%; /* Height of the container, adjust as needed */
+  background-color: none; /* Background of the div */
+  overflow: hidden; /* Ensures the triangle is clipped if it extends outside the div */
+  z-index: 3;
+}
+
+.rectangle-border::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #e9f0f4; /* Color of the triangle */
+  clip-path: polygon(97% 100%, 100% 100%, 100% 0%, 97% 0%);
+  z-index: 3;
 }
 
 h3 {
@@ -291,15 +368,12 @@ h3 {
 .navbar {
   display: none;
 }
-.image-small-window {
-  display: none;
-}
 
 .image_small {
   display: none;
 }
 
-@media screen and (max-width: 875px) {
+@media screen and (max-width: 768px) {
   html,
   body {
     margin: 0;
@@ -316,7 +390,7 @@ h3 {
 
   .navbar {
     display: flex;
-    background-color: black; /* Example background color */
+    background-color: #256f9a; /* Example background color */
     color: white; /* Text color */
     text-align: center;
     padding: 20px 0; /* Top and Bottom Padding */
@@ -332,17 +406,25 @@ h3 {
     position: relative;
   }
   .profile {
-    max-width: 300px; /* Maximum dimensions, allowing it to scale down */
-    max-height: 300px;
-    border-radius: 0%;
+    max-width: 150px; /* Maximum dimensions, allowing it to scale down */
+    max-height: 150px;
   }
   .profile:hover {
-    max-width: 300px; /* Maximum dimensions, allowing it to scale down */
-    max-height: 300px;
-    border-radius: 0%;
-    animation: none;
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    max-width: 150px; /* Maximum dimensions, allowing it to scale down */
+    max-height: 150px;
+    border-radius: 50%;
+    animation: bounce 0.5s;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.5);
     position: relative;
+  }
+  @keyframes bounce {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
   }
 
   .hamburger-menu {
@@ -362,7 +444,7 @@ h3 {
   }
 
   .hamburger-menu:hover .line {
-    background-color: rgb(227, 225, 225);
+    background-color: #92b7cc;
   }
 
   .dropdown-menu {
@@ -391,9 +473,10 @@ h3 {
   }
 
   a {
-    color: black;
+    color: #12374d;
   }
   a:hover {
+    color: #256f9a;
     text-shadow: none;
   }
 
@@ -447,11 +530,5 @@ h3 {
     position: absolute;
     overflow-y: visible;
     height: max-content;
-  }
-
-  .image-small-window {
-    display: flex;
-    justify-content: center;
-    size: 100%;
   }
 }

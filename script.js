@@ -1,6 +1,8 @@
 const canvas = document.createElement("canvas");
 const ctx = canvas.getContext("2d");
-document.getElementById("node-background").appendChild(canvas);
+
+// This adds the network effect
+// document.getElementById("node-background").appendChild(canvas);
 
 let nodes = [];
 const maxNodes = 125;
