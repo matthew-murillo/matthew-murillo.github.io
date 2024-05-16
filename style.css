@@ -66,16 +66,16 @@ canvas {
 }
 
 .profile {
-  max-width: 300px; /* Maximum dimensions, allowing it to scale down */
-  max-height: 300px;
+  max-width: 225px; /* Maximum dimensions, allowing it to scale down */
+  max-height: 225px;
   border-radius: 0%;
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
   position: relative;
 }
 
 .profile:hover {
-  max-width: 300px; /* Maximum dimensions, allowing it to scale down */
-  max-height: 300px;
+  max-width: 225px; /* Maximum dimensions, allowing it to scale down */
+  max-height: 225px;
   border-radius: 0%;
   animation: bounce 0.5s;
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);

@@ -1,7 +1,7 @@
 const canvas = document.createElement("canvas");
 const ctx = canvas.getContext("2d");
 
-// This adds the network effect
+// This adds the network effect to the background
 // document.getElementById("node-background").appendChild(canvas);
 
 let nodes = [];
