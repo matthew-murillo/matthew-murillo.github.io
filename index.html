@@ -151,9 +151,42 @@
           <div class="notes-background">
             <div class="notes-text">
               <h1>Notes</h1>
-              <a href="notes/math330.pdf" , target="_blank"
+              <!-- <a href="notes/math330.pdf" , target="_blank"
                 ><p>Yale Math 330: Advanced Probability</p></a
-              >
+              > -->
+              <h2>Berkeley Econ PhD Notes</h2>
+              <h3>Spring 2025</h3>
+              <li>
+                <a href="#Notes" onclick="toggleNotes('econ201b-notes')"
+                  >ECON201B</a
+                >
+                <ul
+                  id="econ201b-notes"
+                  style="display: none; padding-left: 20px"
+                >
+                  <li>
+                    Based off of the lecture notes by Professor Federico
+                    Echenique. All errors are my own.
+                  </li>
+                  <li>
+                    <a href="notes/ECON201B/lecture1.pdf" target="_blank"
+                      >Lecture 1</a
+                    >
+                  </li>
+                  <!-- Add more links as needed -->
+                </ul>
+              </li>
+
+              <script>
+                function toggleNotes(id) {
+                  var notes = document.getElementById(id);
+                  if (notes.style.display === "none") {
+                    notes.style.display = "block";
+                  } else {
+                    notes.style.display = "none";
+                  }
+                }
+              </script>
             </div>
           </div>
         </div>
