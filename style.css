@@ -29,9 +29,17 @@ canvas {
 }
 
 .left {
-  flex: 0.5; /* Each div will take up 50% of the container width */
-  height: 100vh;
-  overflow-y: scroll; /* Enable vertical scroll */
+  flex: 0.5; /* Take up 50% of the container width */
+  height: 100vh; /* Full viewport height */
+  overflow-y: auto; /* Enable vertical scroll if needed */
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 20px; /* Add padding to prevent content from touching edges */
 }
 .right {
   flex: 1; /* Each div will take up 50% of the container width */
@@ -39,16 +47,6 @@ canvas {
   width: 100vh;
   overflow-y: hidden; /* Disable vertical scroll */
   overflow-x: hidden; /* Disable horizontal scroll */
-}
-
-.left {
-  background-color: white;
-  color: white;
-  display: flex;
-  flex-direction: column; /* Stack children vertically */
-  align-items: center; /* Center items horizontally */
-  justify-content: flex-start;
-  position: relative;
 }
 
 .right {
