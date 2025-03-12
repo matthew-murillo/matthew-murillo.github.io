@@ -1,0 +1,534 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* 100% of the viewport height */
+  width: 100vw; /* 100% of the viewport width */
+  box-sizing: border-box;
+  /* font-family: "Proxima Nova", sans-serif; */
+  font-family: "Avenir";
+
+  color: #12374d;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+canvas {
+  display: block; /* Removes the default margin */
+  width: 100%; /* Viewport width */
+  height: 100%; /* Viewport height */
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.left {
+  flex: 0.5; /* Each div will take up 50% of the container width */
+  height: 100vh;
+  overflow-y: scroll; /* Enable vertical scroll */
+}
+.right {
+  flex: 1; /* Each div will take up 50% of the container width */
+  height: 100vh;
+  width: 100vh;
+  overflow-y: hidden; /* Disable vertical scroll */
+  overflow-x: hidden; /* Disable horizontal scroll */
+}
+
+.left {
+  background-color: #f0f4f6;
+  color: white;
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: flex-start;
+  position: relative;
+}
+
+.right {
+  background-color: white;
+  position: relative;
+}
+
+.image {
+  position: relative; /* Establishes a positioning context for absolute children */
+  display: flex; /* To center the child image */
+  justify-content: center; /* Center horizontally */
+  padding-top: 50px;
+  padding-bottom: 0px;
+  z-index: 5;
+}
+
+.profile {
+  max-width: 200px; /* Maximum dimensions, allowing it to scale down */
+  max-height: 200px;
+  border-radius: 50%;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.profile:hover {
+  max-width: 200px; /* Maximum dimensions, allowing it to scale down */
+  max-height: 200px;
+  border-radius: 50%;
+  animation: bounce 0.5s;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.menu {
+  z-index: 5;
+  width: 100%; /* Full width of the container */
+  list-style-type: none; /* Remove default list styling */
+  padding: 0px;
+  text-align: center; /* Align menu items to the left */
+  font-size: 45px;
+
+  text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.menu ul {
+  display: inline-block;
+  list-style-type: none; /* Remove default list styling */
+  text-align: left;
+  padding: 0;
+}
+
+.menu li {
+  margin-bottom: 50px; /* Space between menu items */
+  margin-top: 0px;
+}
+
+.menu a {
+  text-decoration: none; /* Optional: Removes underline from links */
+  color: #12374d; /* Set link color */
+  /* Additional link styles as needed */
+}
+#node-background {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%); /* Start off-screen to the right */
+  }
+  to {
+    transform: translateX(0); /* End at the centered position */
+  }
+}
+
+.slide-in {
+  animation: slideInFromRight 0.5s ease-out forwards;
+  display: flex; /* Or however you want to display it */
+}
+
+.Home {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex; /* Use Flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  z-index: 1;
+}
+
+.home-background {
+  width: 80%; /* Adjust as needed */
+  height: 80%; /* Adjust as needed */
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  padding: 50px;
+  padding-top: 20px;
+  position: relative;
+}
+
+.home-text {
+  width: 100%; /* Adjust as needed */
+  height: 100%; /* Adjust as needed */
+  flex: 1;
+  overflow: auto;
+}
+
+.home-background a:hover,
+.research-background a:hover,
+.notes-background a:hover,
+.projects-background a:hover {
+  color: #256f9a;
+  text-shadow: none;
+}
+
+.Research {
+  visibility: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex; /* Use Flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  z-index: 1;
+}
+
+.research-background {
+  width: 80%; /* Adjust as needed */
+  height: 80%; /* Adjust as needed */
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  padding: 50px;
+  padding-top: 20px;
+  position: relative;
+}
+
+.research-text {
+  width: 100%; /* Adjust as needed */
+  height: 100%; /* Adjust as needed */
+  flex: 1;
+  overflow: auto;
+}
+
+.Notes {
+  visibility: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex; /* Use Flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+
+  z-index: 1;
+}
+
+.notes-background {
+  width: 80%; /* Adjust as needed */
+  height: 80%; /* Adjust as needed */
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  padding: 50px;
+  padding-top: 20px;
+  position: relative;
+}
+
+.notes-text {
+  width: 100%; /* Adjust as needed */
+  height: 100%; /* Adjust as needed */
+  flex: 1;
+  overflow: auto;
+}
+
+.Projects {
+  visibility: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex; /* Use Flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+
+  z-index: 1;
+}
+
+.projects-background {
+  width: 80%; /* Adjust as needed */
+  height: 80%; /* Adjust as needed */
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  padding: 50px;
+  padding-top: 20px;
+  position: relative;
+}
+
+.projects-text {
+  width: 100%; /* Adjust as needed */
+  height: 100%; /* Adjust as needed */
+  flex: 1;
+  overflow: auto;
+}
+
+p {
+  line-height: 2.5;
+  margin: 0;
+}
+
+li {
+  margin: 30px 0;
+  list-style-type: none; /* Remove default list styling */
+}
+
+a {
+  text-decoration: none;
+  color: #12374d;
+}
+
+a:hover {
+  color: white;
+  text-shadow: 3px 3px 3px #256f9a;
+}
+
+.triangle-container-back {
+  position: absolute;
+  width: 100%; /* Full width of the container */
+  height: 100%; /* Height of the container, adjust as needed */
+  background-color: none; /* Background of the div */
+  overflow: hidden; /* Ensures the triangle is clipped if it extends outside the div */
+  z-index: 0;
+}
+
+.triangle-container-back::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #92b7cc; /* Color of the triangle */
+  clip-path: polygon(0 0, 100% 0, 100% 50%);
+  z-index: 0;
+}
+
+.triangle-container-front {
+  position: absolute;
+  width: 100%; /* Full width of the container */
+  height: 100%; /* Height of the container, adjust as needed */
+  background-color: none; /* Background of the div */
+  overflow: hidden; /* Ensures the triangle is clipped if it extends outside the div */
+  z-index: 1;
+}
+
+.triangle-container-front::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #256f9a; /* Color of the triangle */
+  clip-path: polygon(5% 0, 100% 0, 100% 47.5%);
+  z-index: 1;
+}
+
+.triangle-container-line {
+  position: absolute;
+  width: 100%; /* Full width of the container */
+  height: 100%; /* Height of the container, adjust as needed */
+  background-color: none; /* Background of the div */
+  overflow: hidden; /* Ensures the triangle is clipped if it extends outside the div */
+  z-index: 2;
+}
+
+.triangle-container-line::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: white; /* Color of the triangle */
+  clip-path: polygon(25% 0%, 26% 0, 100% 37%, 100% 37.5%);
+  z-index: 2;
+}
+
+.rectangle-border {
+  position: absolute;
+  width: 100%; /* Full width of the container */
+  height: 100%; /* Height of the container, adjust as needed */
+  background-color: none; /* Background of the div */
+  overflow: hidden; /* Ensures the triangle is clipped if it extends outside the div */
+  z-index: 3;
+}
+
+.rectangle-border::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #e9f0f4; /* Color of the triangle */
+  clip-path: polygon(97% 100%, 100% 100%, 100% 0%, 97% 0%);
+  z-index: 3;
+}
+
+h3 {
+  margin-top: 30px;
+}
+.navbar {
+  display: none;
+}
+
+.image_small {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    height: auto; /* 100% of the viewport height */
+    width: 100%; /* 100% of the viewport width */
+    box-sizing: border-box;
+    overflow-y: hidden;
+  }
+
+  .left {
+    display: none;
+  }
+
+  .navbar {
+    display: flex;
+    background-color: #256f9a; /* Example background color */
+    color: white; /* Text color */
+    text-align: center;
+    padding: 20px 0; /* Top and Bottom Padding */
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
+  .image_small {
+    display: flex;
+    justify-content: left;
+    position: relative;
+  }
+  .profile {
+    max-width: 150px; /* Maximum dimensions, allowing it to scale down */
+    max-height: 150px;
+  }
+  .profile:hover {
+    max-width: 150px; /* Maximum dimensions, allowing it to scale down */
+    max-height: 150px;
+    border-radius: 50%;
+    animation: bounce 0.5s;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.5);
+    position: relative;
+  }
+  @keyframes bounce {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  .hamburger-menu {
+    position: absolute;
+    top: 50%;
+    right: 5%; /* Adjust as needed */
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  .hamburger-menu .line {
+    width: 30px; /* Width of the hamburger lines */
+    height: 3px; /* Height of the hamburger lines */
+    background-color: white; /* Color of the hamburger lines */
+    margin: 5px 0; /* Spacing between the lines */
+  }
+
+  .hamburger-menu:hover .line {
+    background-color: #92b7cc;
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9; /* Background color of the dropdown */
+    min-width: 160px; /* Width of the dropdown */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); /* Optional: for a shadow effect */
+    z-index: 10;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: height 0.5s ease, opacity 0.5s ease;
+  }
+  .dropdown-menu.show {
+    max-height: 500px; /* Adjust to fit content */
+    opacity: 1;
+  }
+
+  .dropdown-menu a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    z-index: 10;
+  }
+
+  a {
+    color: #12374d;
+  }
+  a:hover {
+    color: #256f9a;
+    text-shadow: none;
+  }
+
+  .right {
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: visible;
+  }
+
+  .name {
+    padding-left: 7%;
+    font-size: 25px;
+    text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1);
+  }
+  .Home,
+  .Notes,
+  .Projects,
+  .Research {
+    height: auto;
+    padding-top: 100px;
+    scroll-behavior: smooth;
+  }
+
+  .home-background,
+  .research-background,
+  .projects-background,
+  .notes-background {
+    background-color: #f9f9f9;
+    opacity: 90%;
+    max-height: 1000px;
+    padding-bottom: 40%;
+  }
+  .notes-background {
+    padding-bottom: 500px;
+  }
+
+  .home-text,
+  .research-text,
+  .projects-text,
+  .notes-text {
+    width: 100%; /* Adjust as needed */
+    flex: 1;
+  }
+
+  .fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+
+  #node-background {
+    position: absolute;
+    overflow-y: visible;
+    height: max-content;
+  }
+}
